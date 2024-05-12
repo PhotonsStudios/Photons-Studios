@@ -199,40 +199,43 @@ width: 100%;
     }
 
     .container {
-        margin: 0;
+        position: relative;
         width: 100%;
     }
 
     .black-strip {
-        margin: 0;
-        width: 100%;
-        padding: 10px 0; /* Adjusted padding for smaller screens */
-        justify-content: space-between; /* Align items with space between */
-    }
-
-    .dropbtn {
-        font-size: 14px;
-        margin-right: 10px; /* Reduce space between dropbtn and sign */
-    }
-
-    .dropdown-content {
-        left: 0; /* Adjust dropdown position for smaller screens */
-        min-width: 100%; /* Make dropdown full width */
-    }
-
-    .imge {
-        width: 80px; /* Decrease image width for smaller screens */
-        margin-right: 10px; /* Decrease margin for smaller screens */
+        padding: 12px 0;
+        font-size: 16px; /* Decrease font size for smaller screens */
+        color: #000000;
+        background-color: rgb(63, 63, 63);
+        width: 100%; /* Extend to full width */
+        display: flex;
+        justify-content: space-between; /* Adjust to evenly space items */
+        align-items: center;
     }
 
     .news-button,
     .sign,
     .dropdown-content a,
-    .black-strip a {
-        font-size: 14px; /* Decrease font size for smaller screens */
+    .black-strip a,
+    .dropbtn {
+        font-size: 16px; /* Decrease font size for smaller screens */
+        margin: 0 10px; /* Reduce gap between buttons */
+    }
+
+    .imge {
+        width: 100px; /* Decrease image width for smaller screens */
+        border-radius: 4px; /* Reduce border radius for smaller screens */
+        margin: 0 10px; /* Reduce gap between image and buttons */
     }
 
     .content {
+        margin-top: 10px; /* Reduce top margin for smaller screens */
         margin-left: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .dropdown-content {
+        left: 0;
+        min-width: calc(100% - 20px); /* Extend dropdown to full width */
     }
 }
