@@ -192,23 +192,27 @@ width: 100%;
 }
 /* For mobile devices */
 @media only screen and (max-width: 600px) {
-    
-body {
-    background-color: #808080;
-    margin: 0;
-    padding: 0;
-}
-    .black-strip {
+    body {
+        background-color: #808080;
         margin: 0;
-       width: 100%;
-        padding: 8px 0; /* Decrease padding for smaller screens */
+        padding: 0;
     }
-    .dropbtn{
-        font-size: 14px;
-    }
+
     .container {
         margin: 0;
-       width: 100%;
+        width: 100%;
+    }
+
+    .black-strip {
+        margin: 0;
+        width: 100%;
+        padding: 10px 0; /* Adjusted padding for smaller screens */
+        justify-content: space-between; /* Align items with space between */
+    }
+
+    .dropbtn {
+        font-size: 14px;
+        margin-right: 10px; /* Reduce space between dropbtn and sign */
     }
 
     .dropdown-content {
@@ -217,8 +221,8 @@ body {
     }
 
     .imge {
-        width: 100px; /* Decrease image width for smaller screens */
-        margin-right: 20px; /* Decrease margin for smaller screens */
+        width: 80px; /* Decrease image width for smaller screens */
+        margin-right: 10px; /* Decrease margin for smaller screens */
     }
 
     .news-button,
