@@ -192,4 +192,18 @@ body {
     cursor: pointer;
     padding: 0;
 }
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+    .black-strip {
+        margin-left: -15px; /* Adjust margin for smaller screens */
+    }
 
+    .container {
+        margin-left: 0; /* Reset margin-left for smaller screens */
+    }
+
+    .dropdown-content {
+        left: 0; /* Adjust dropdown position for smaller screens */
+        min-width: 100%; /* Make dropdown full width */
+    }
+}
