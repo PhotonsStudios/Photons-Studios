@@ -36,12 +36,16 @@
         @media screen and (max-width: 600px) {
             /* Example styles for mobile devices */
             .container {
-                width: 100%;
-            }
-            .black-strip {
-                width: 100%;
-                padding: 10px;
-            }
+        width: 100%;
+        padding: 0; /* Reset padding to ensure full width */
+        margin: 0; /* Reset margin to ensure full width */
+    }
+    
+    .black-strip {
+        width: 100%;
+        padding: 10px;
+        margin: 0; /* Reset margin to ensure full width */
+    }
             .news-button, .sign, .black-strip a, .imge, .dropdown-content a, .dropbtn {
         font-size: 18px;
     }
