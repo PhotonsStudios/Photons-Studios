@@ -196,6 +196,7 @@ body {
 @media only screen and (max-width: 600px) {
     .black-strip {
         margin-left: -15px; /* Adjust margin for smaller screens */
+        padding: 8px 0; /* Decrease padding for smaller screens */
     }
 
     .container {
@@ -205,5 +206,21 @@ body {
     .dropdown-content {
         left: 0; /* Adjust dropdown position for smaller screens */
         min-width: 100%; /* Make dropdown full width */
+    }
+
+    .imge {
+        width: 100px; /* Decrease image width for smaller screens */
+        margin-right: 20px; /* Decrease margin for smaller screens */
+    }
+
+    .news-button,
+    .sign,
+    .dropdown-content a,
+    .black-strip a {
+        font-size: 16px; /* Decrease font size for smaller screens */
+    }
+
+    .content {
+        margin-left: 10px; /* Adjust margin for smaller screens */
     }
 }
