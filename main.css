@@ -8,7 +8,7 @@ body {
 .container {
     position: relative;
 width: 100%;
-
+}
 .black-strip {
     padding: 12px 0;
     text-align: left;
@@ -189,4 +189,46 @@ width: 100%;
     color: #ffffff;
     cursor: pointer;
     padding: 0;
+}
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+    
+body {
+    background-color: #808080;
+    margin: 0;
+    padding: 0;
+}
+    .black-strip {
+        margin: 0;
+       width: 100%;
+        padding: 8px 0; /* Decrease padding for smaller screens */
+    }
+    .dropbtn{
+        font-size: 14px;
+    }
+    .container {
+        margin: 0;
+       width: 100%;
+    }
+
+    .dropdown-content {
+        left: 0; /* Adjust dropdown position for smaller screens */
+        min-width: 100%; /* Make dropdown full width */
+    }
+
+    .imge {
+        width: 100px; /* Decrease image width for smaller screens */
+        margin-right: 20px; /* Decrease margin for smaller screens */
+    }
+
+    .news-button,
+    .sign,
+    .dropdown-content a,
+    .black-strip a {
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+
+    .content {
+        margin-left: 10px; /* Adjust margin for smaller screens */
+    }
 }

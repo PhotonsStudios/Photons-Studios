@@ -5,80 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
-    <link rel="icon" href="favico.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+<link rel="icon" href="favico.png" type="image/x-icon">
     <title>Photons Studios</title>
-    <style>
-        html, body {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        .landscape-prompt {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: #fff;
-            font-size: 24px;
-            text-align: center;
-            padding-top: 20%;
-            z-index: 9999;
-        }
-    </style>
 </head>
 <body>
-    <!-- Landscape mode prompt -->
-    <div class="landscape-prompt" id="landscapePrompt">
-        <p>Please rotate your device to landscape mode for the best experience.</p>
-    </div>
-
     <div class="container">
-        <div class="black-strip">
-            <a href="index.html">
-                <img class="imge" src="Logo.png">
-            </a>
-            <a href="news.html" class="news-button">News&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</a>
-            <div class="dropdown">
-                <span class="dropbtn">Who we are?</span>
-                <div class="dropdown-content">
-                    <a href="abt.html">About us</a>
-                    <a href="abcr.html">About the creators</a>
-                    <a href="abg.html">About the game</a>
-                </div>
-            </div>    
-            <a href="link to download the game here" class="sign">Download </a>
-            <a href="register.html" class="sign">Sign up</a>
-        </div>
+    <div class="black-strip">
+    
+        <a href="index.html">
+            <img class="imge" src="Logo.png">
+        </a>
+      <a href="news.html" class="news-button">News&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</a>
+        <div class="dropdown">
+            <span class="dropbtn">Who we are?</span>
+            <div class="dropdown-content">
+                <a href="abt.html">About us</a>
+                <a href="abcr.html">About the creators</a>
+                <a href="abg.html">About the game</a>
+            </div>
+        </div>    
+        <a href="link to download the game here" class="sign">Download </a>
+        <a href="register.html" class="sign">Sign up</a>
     </div>
-    <script>
-        // Function to check if the device is in landscape mode
-        function isLandscape() {
-            return window.innerWidth > window.innerHeight;
-        }
-
-        // Function to show/hide landscape prompt
-        function toggleLandscapePrompt() {
-            const landscapePrompt = document.getElementById('landscapePrompt');
-            if (isLandscape()) {
-                landscapePrompt.style.display = 'none';
-                document.body.style.overflow = 'auto'; // Enable scrolling
-            } else {
-                landscapePrompt.style.display = 'block';
-                document.body.style.overflow = 'hidden'; // Disable scrolling
-            }
-        }
-
-        // Show/hide landscape prompt when the window is resized
-        window.addEventListener('resize', toggleLandscapePrompt);
-
-        // Initial check when the page loads
-        window.addEventListener('load', toggleLandscapePrompt);
-    </script>
+</div>
+    <script> src= "main.js"</script>
 </body>
 </html>
