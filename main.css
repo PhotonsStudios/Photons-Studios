@@ -7,8 +7,9 @@ body {
 
 .container {
     position: relative;
-width: 100%;
+    width: 100%;
 }
+
 .black-strip {
     padding: 12px 0;
     text-align: left;
@@ -20,15 +21,6 @@ width: 100%;
     align-items: center;
 }
 
-.news-button {
-    font-size: 25px;
-    font-family: "Jersey 25", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    position: relative;
-    color: white;
-    text-decoration: none;
-}
 
 .news-button::after {
     content: '';
@@ -51,8 +43,9 @@ width: 100%;
     font-family: "Jersey 25", sans-serif;
     font-weight: 500;
     font-style: normal;
-    position: relative;
-    left: 40%;
+    position: fixed;
+    top: 30px; /* Adjust this value to move it down */
+    right: 20px;
     color: white;
     text-decoration: none;
     padding: 10px 20px; /* Adjust padding as needed */
@@ -60,6 +53,8 @@ width: 100%;
     background-color: #17c400; /* Change to red */
     transition: background-color 0.3s, box-shadow 0.3s; /* Add transitions */
 }
+
+
 
 .sign:hover {
     background-color: #0e7500; /* Darker red on hover */
@@ -177,7 +172,6 @@ width: 100%;
     border-radius: 4px;
     background-color: #727272;
 }
-
 .dropbtn {
     background: none;
     border: none;
@@ -189,4 +183,16 @@ width: 100%;
     color: #ffffff;
     cursor: pointer;
     padding: 0;
+    margin-left: 70px; /* Adjust margin as needed */
+}
+
+.news-button {
+    font-size: 25px;
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    margin-left: 0; /* Reset margin */
 }
