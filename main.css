@@ -1,6 +1,6 @@
 
 body {
-    background-color: #808080;
+    background-color: #000000;
     margin: 0;
     padding: 0;
 }
@@ -15,7 +15,7 @@ body {
     text-align: left;
     font-size: 19px;
     color: #000000;
-    background-color: rgb(63, 63, 63);
+    background-color: rgba(32, 32, 32,0.5);
     width: 100%; /* Set width to 100% */
     display: flex;
     align-items: center;
@@ -36,17 +36,16 @@ body {
     text-decoration: none;
     padding: 10px 20px; /* Adjust padding as needed */
     border-radius: 6px; /* Adjust border-radius for curved edges */
-    background-color: #17c400; /* Change to red */
+    background-color: #0090c9; /* Change to red */
     transition: background-color 0.3s, box-shadow 0.3s; /* Add transitions */
 }
 
 
 
 .sign:hover {
-    background-color: #0e7500; /* Darker red on hover */
+    background-color: #004d80; /* Darker red on hover */
     color: white;
 }
-
 
 
 
@@ -200,8 +199,9 @@ body {
 .grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(450px, 1fr)); /* Adjusted width for smaller squares */
-    grid-auto-rows: 300px; /* Adjusted height for smaller squares */
-    grid-gap: 10px; /* Adjust gap between grid items */
+    grid-auto-rows: 250px; /* Adjusted height for smaller squares */
+    column-gap: 20px; /* Adjust horizontal gap between grid items */
+    row-gap: 10px; /* Adjust vertical gap between grid items */
     margin: 20px 20px; /* Adjust margin as needed */
 }
 
@@ -211,9 +211,11 @@ body {
     transition: transform 0.3s ease; /* Smooth transition for hover effect */
     overflow: hidden; /* Prevent images from distorting the layout */
 }
+
 .grid-img {
     max-width: 100%; /* Make the width of the image maximum 100% of the container */
     max-height: 100%; /* Make the height of the image maximum 100% of the container */
+    width: 100%;
 }
 
 
