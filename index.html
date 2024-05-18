@@ -161,7 +161,16 @@
 }
 
 }
-
+@media only screen and (min-width: 800px) and (max-width: 1910px) {
+    .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr)); /* Adjusted width for smaller squares */
+    grid-auto-rows: 370px; /* Adjust row height to make them smaller squares */
+    column-gap: 10px; /* Adjust horizontal gap between grid items */
+    grid-gap: 10px; /* Adjust gap between grid items */
+    margin: 20px 20px; /* Adjust margin as needed */
+}
+}
     </style>
 </body>
 </html>

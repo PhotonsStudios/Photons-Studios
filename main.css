@@ -1,52 +1,76 @@
 
 body {
-    background-color: #000000;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    padding-top: 60px; /* Adjust according to the height of .black-strip */
 }
 
 .container {
     position: relative;
     width: 100%;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 .black-strip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 12px 0;
     text-align: left;
     font-size: 19px;
     color: #000000;
-    background-color: rgba(32, 32, 32,0.5);
-    width: 100%; /* Set width to 100% */
+    background-color: rgba(32, 32, 32, 0.5);
     display: flex;
     align-items: center;
+    z-index: 1000; /* Ensure it's above other content */
 }
 
-
-
-
+/* Fixed sign bar */
 .sign {
+    position: fixed;
+    top: 30px; /* Adjust this value to move it down */
+    right: 20px;
     font-size: 25px;
     font-family: "Jersey 25", sans-serif;
     font-weight: 500;
     font-style: normal;
-    position: fixed;
-    top: 30px; /* Adjust this value to move it down */
-    right: 20px;
     color: white;
     text-decoration: none;
     padding: 10px 20px; /* Adjust padding as needed */
     border-radius: 6px; /* Adjust border-radius for curved edges */
     background-color: #0090c9; /* Change to red */
     transition: background-color 0.3s, box-shadow 0.3s; /* Add transitions */
+    z-index: 1000; /* Ensure it's above other content */
 }
 
+/* Content area */
+.content {
+    margin-top: 60px; /* Ensure content starts below .black-strip */
+}
 
+/* Adjust content when sign bar is active */
+.black-strip.active + .content {
+    margin-top: 120px; /* Adjust based on the combined height of .black-strip and .sign */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .sign {
+        display: none; /* Hide sign bar on smaller screens */
+    }
+}
 
 .sign:hover {
     background-color: #004d80; /* Darker red on hover */
     color: white;
 }
 
+.ico{
+    border-radius: 10px;
+}
 
 
 .black-strip a {
